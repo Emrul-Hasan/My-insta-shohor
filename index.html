@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Insta-Sohor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- google Montserrat  font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#"> My Insta-Sohor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                        <i class="fa-solid fa-heart text-danger"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main container mx-auto p-3">
+        <div id="posts">
+        </div>
+        <div id="liked">
+            <h1>Liked posts</h1>
+        </div>
+
+        <div id="reported">
+            <h1>Reported posts</h1>
+        </div>
+    </main>
+    <footer></footer>
+
+    <section class="px-5 ">
+
+        <h3>Theory Part</h3>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <h4>How does JS work?</h4>
+            <p class="px-5">
+                JavaScript is a programming language that runs on the client-side and is one of the most efficient and
+                widely used scripting languages. JavaScript and JavaScript engines are both available. Google Chrome,
+                for
+                example, has its own JavaScript engine called V8. When we execute a JavaScript application in a web
+                browser,
+                the browser's engine receives the JavaScript code and runs the source code to produce the result.
+                Sample flow-chart javascript engine work: <br>
+                Java script file -> parser -> AST (Abstract syntax tree) -> Conversion to Machine Code -> Convert
+                Machine
+                Code ->Code runs <br><br>
+                The parser's role is to verify the JavaScript line of code for syntactic problems. When the parser
+                detects
+                an error, it throws an error and stopped the execution of the code. It prepares the AST data structure
+                when
+                there are no errors in the code (it stands for Abstract Syntax Tree). Then parser creates an Abstract
+                Syntax
+                Tree, and the JavaScript engine turns the JavaScript language into machine code. When a JavaScript
+                program
+                is transferred to machine language, the converted code is provided to the system for execution, and the
+                engine then executes the byte code.
+
+            </p>
+        </div>
+
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <h4>What is the difference between Local storage & Session storage?</h4>
+            <p class="px-5">
+                This read-only interface element gives access to the Document's local storage object, which keeps your
+                data safe across browser sessions. Local Storage data is cleared when the page session ends – that is,
+                when the page is closed – unlike session Storage data.
+            <ul>1. There is no data transfer to the server.</ul>
+            <ul>2. It is supported by fewer older browsers.</ul>
+
+            Local storage has 4 methods:
+            <li> setItem() Method</li>
+            <li> getItem() Method</li>
+            <li> removeItem() Method</li>
+            <li> clear() Method</li>
+
+
+            The sessionStorage read-only property may be used to access Session Storage objects. SessionStorage
+            differs from localStorage in that localStorage data does not expire, however sessionStorage data is
+            removed after the page session finishes.
+            <ul>1.A data transmission to the server is not possible.</ul>
+            <ul>2. It is supported by a smaller number of older browsers.</ul>
+
+            Session Storage has 4 methods:
+            <li> setItem() Method</li>
+            <li> getIteam() Method</li>
+            <li> removeItem() Method</li>
+            <li> clear() Method</li>
+
+            </p>
+        </div>
+
+    </section>
+
+    <!-- add javascript  file  -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
